@@ -1,27 +1,22 @@
-# HackmeUpFront
+# HackmeUp 2019 (Front)
+Este es un pequeno ejemplo de un sistema de buscador  de (Trenes, Hoteles), en la documentacion podras encontrar la forma correcta de consumar este api, debemos recordar que esto se realizo en cuestion de horas y por lo tanto muchas cosas no funcionan de la forma que se quiere. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
+# Documentacion
+https://documenter.getpostman.com/view/2056697/S1M3uQfX?version=latest
 
-## Development server
+# Run
+`git clone https://github.com/yond1994/hackmeup`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+`cd hackmeup`
 
-## Code scaffolding
+`npm install`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`ng serve`
 
-## Build
+Luego de correr estos comando en orden, ya deberias poder ingresa a tu navegador
+`http://localhost:4200`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+API (Laravel) https://github.com/leifermendez/api-hackmeup
+El autor del api leifer33@gmail.com
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Contacto yond1994@gmail.com
