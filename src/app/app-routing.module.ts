@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'register/:filter/:from/:tipefrom/:to/:tipeto', component: RegisterComponent},
   { path: 'thank', component: ThankComponent},
   { path: 'hotel/:filter', component: HotelComponent},
-  { path: 'register/:id', component: RegisterComponent},
+  { path: 'register/:filter/:id', component: RegisterComponent},
 
 ];
 

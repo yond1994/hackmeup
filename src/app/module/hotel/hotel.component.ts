@@ -33,7 +33,7 @@ export class HotelComponent implements OnInit {
     });
   }
   ir(id) {
-    this.router.navigateByUrl('/register/' +id);
+    this.router.navigateByUrl('/register/'+ this.dataurl +'/' +id);
   }
 
 }

@@ -66,6 +66,8 @@ export class RegisterComponent implements OnInit {
         delete  this.form.value.contact_email;
         this.form.value.hotel_available = this.idhotel;
         this.form.value.type_reservations = 'standar';
+        this.form.value.date_start = this.data.date_from;
+        this.form.value.date_finish = this.data.date_to;
         let body = this.form.value;
         console.log(body);
         this.rest.post('/1.0/hotel/reservations', body).then(value => {
@@ -74,7 +76,6 @@ export class RegisterComponent implements OnInit {
         }).catch(error=> {
           console.log(error);
         })
-
       }else {
         if( this.idfrom) {
           this.form.value.type_reservations = this.tipeto;
