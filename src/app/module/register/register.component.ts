@@ -65,6 +65,7 @@ export class RegisterComponent implements OnInit {
         delete  this.form.value.contact_phone;
         delete  this.form.value.contact_email;
         this.form.value.hotel_available = this.idhotel;
+        this.form.value.type_reservations = 'standar';
         let body = this.form.value;
         console.log(body);
         this.rest.post('/1.0/hotel/reservations', body).then(value => {
