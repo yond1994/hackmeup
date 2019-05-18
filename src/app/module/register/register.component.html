@@ -1,0 +1,55 @@
+<div class="container margintop10">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="text-center">
+        <h3>Información del viajero</h3>
+      </div>
+      <form  [formGroup]="form" (submit)="save($event)">
+        <div class="row">
+          <div class="col-md-6 col-xs-6">
+            <label>First Name</label>
+            <input class="form-control"  formControlName="first_name" type="text">
+          </div>
+          <div class="col-md-6 col-xs-6">
+            <label>Last Name</label>
+            <input class="form-control"  formControlName="last_name" type="text">
+          </div>
+          <div class="col-md-6 col-xs-6">
+            <label>Phone</label>
+            <input class="form-control"  formControlName="phone" type="text">
+          </div>
+          <div class="col-md-6 col-xs-6">
+            <label>Emil </label>
+            <input class="form-control"  formControlName="email" type="text">
+          </div>
+        </div>
+        <br/>
+        <hr>
+        <h3 class="text-center"> Persona de contacto</h3>
+        <div class="row">
+          <div class="col-md-6 col-xs-6">
+            <label>Contact First Name</label>
+            <input class="form-control"  formControlName="contact_first_name" type="text">
+          </div>
+          <div class="col-md-6 col-xs-6">
+            <label>Contact Last Name</label>
+            <input class="form-control"  formControlName="contact_last_name" type="text">
+          </div>
+          <div class="col-md-6 col-xs-6">
+            <label>Contact Phone</label>
+            <input class="form-control"  formControlName="contact_phone" type="text">
+          </div>
+          <div class="col-md-6 col-xs-6">
+            <label>Contact Emil </label>
+            <input class="form-control"  formControlName="contact_email" type="text">
+          </div>
+        </div>
+        <hr>
+        <div class="col-md-12 ">
+          <button [disabled]="!form.valid" type="submit" class="btn btn-warning form-control margintop30">Register</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>

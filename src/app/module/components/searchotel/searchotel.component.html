@@ -1,0 +1,39 @@
+
+<form  [formGroup]="form" (submit)="save($event)">
+  <div class="row">
+    <div class="col-md-3 col-xs-6">
+      <label>From</label>
+      <ng-select class="custom" formControlName="origin_available_zone_id" [items]="cities" [virtualScroll]="true"  placeholder="City or Station"  bindLabel="train_stations_name" bindValue="id" >
+        <ng-template ng-option-tmp let-item="item" let-index="index" let-search="searchTerm">
+          <b [ngOptionHighlight]="search">
+            <div>{{item.id}} / {{item.train_stations_name}}</div>
+            <div class="font-weight-light">{{item.contry_name}}</div>
+          </b>
+        </ng-template>
+      </ng-select>
+    </div>
+    <div class="col-md-3 col-xs-6">
+      <label>To</label>
+      <ng-select class="custom" formControlName="destination_available_zone_id" [items]="cities" [virtualScroll]="true"  placeholder="City or Station"  bindLabel="train_stations_name" bindValue="id" >
+        <ng-template ng-option-tmp let-item="item" let-index="index" let-search="searchTerm">
+          <b [ngOptionHighlight]="search">
+            <div>{{item.id}} {{item.train_stations_name}}</div>
+            <div class="font-weight-light">{{item.contry_name}}</div>
+          </b>
+        </ng-template>
+      </ng-select>
+    </div>
+    <div class="col-md-3 col-xs-12">
+      <label>when</label>
+      <my-date-range-picker  formControlName="dates" name="mydaterange" [options]="myDateRangePickerOptions"
+                             [(ngModel)]="model" required></my-date-range-picker>
+    </div>
+    <div class="col ">
+      <label>Persons</label>
+      <input class="form-control"  [(ngModel)]="adults"  value="1" formControlName="adults" type="number" min="1" max="20"  >
+    </div>
+    <div class="col-md-1 col-xs-12">
+      <button [disabled]="!form.valid" type="submit" class="btn btn-warning form-control margintop30">Searh</button>
+    </div>
+  </div>
+</form>

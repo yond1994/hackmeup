@@ -1,0 +1,15 @@
+.margintop10 {
+  margin-top: 60px;
+}
+.margintop30 {
+  margin-top: 10%;
+}
+.fondohead {
+  background-image: url("https://content-static.eurostar.com/styles/1900x490/s3/2016-10/8870__DSC6167_ORIGINAL_crop_0.jpg?h=304a6ef4&i=270");
+  min-height: 400px;
+  padding: 10%;
+  color: #ffffff!important;
+}
+.letraf {
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}

@@ -1,0 +1,21 @@
+.margintop10 {
+  margin-top: 9%;
+}
+.standarcolor {
+  background-color: #ffe600;
+  color: #0b7280;
+}
+.standar2color {
+  background-color: #109fb3;
+  color: #fff;
+}
+.bunisesrcolor {
+  background-color: #5f718c;
+  color: #fff;
+}
+.padding0 {
+  padding: 0rem!important;
+}
+.cursor {
+  cursor: pointer;
+}

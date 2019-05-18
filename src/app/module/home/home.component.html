@@ -1,0 +1,59 @@
+<div class="fondohead">
+
+  <h1 class="letraf" >
+    HARRY POTTER TOUR OF LONDON
+  </h1>
+  <div style="width: 100px">
+    <button   class="btn btn-warning form-control margintop30">Tours</button>
+  </div>
+</div>
+<div class="container margintop10">
+  <!--<ngb-carousel *ngIf="images">-->
+    <!--<ng-template ngbSlide>-->
+      <!--<img style="width: 100%" [src]="images[0]" alt="Random first slide">-->
+      <!--<div class="carousel-caption">-->
+        <!--<h3>First slide label</h3>-->
+        <!--<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>-->
+      <!--</div>-->
+    <!--</ng-template>-->
+    <!--<ng-template ngbSlide>-->
+      <!--<img style="width: 100%"  [src]="images[1]" alt="Random second slide">-->
+      <!--<div class="carousel-caption">-->
+        <!--<h3>Second slide label</h3>-->
+        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+      <!--</div>-->
+    <!--</ng-template>-->
+    <!--<ng-template ngbSlide>-->
+      <!--<img style="width: 100%"  [src]="images[2]" alt="Random third slide">-->
+      <!--<div class="carousel-caption">-->
+        <!--<h3>Third slide label</h3>-->
+        <!--<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
+      <!--</div>-->
+    <!--</ng-template>-->
+  <!--</ngb-carousel>-->
+
+  <div class="row">
+    <!--buscardor-->
+    <div class="col-sm-12">
+      <ngb-tabset>
+        <ngb-tab title="Train">
+          <ng-template ngbTabContent>
+            <br/>
+            <app-search></app-search>
+          </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Hotels">
+          <ng-template ngbTabContent>
+            <br/>
+            <app-searchotel></app-searchotel>
+          </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Consultar Reserva" [disabled]="true">
+          <ng-template ngbTabContent>
+            <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla facilisi. Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et odio. Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam urna, egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim, nec tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget neque. Phasellus nec tortor vel tellus pulvinar feugiat.</p>
+          </ng-template>
+        </ngb-tab>
+      </ngb-tabset>
+    </div>
+  </div>
+</div>
