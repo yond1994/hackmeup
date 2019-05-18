@@ -17,6 +17,7 @@ import { TicketsComponent } from './module/tickets/tickets.component';
 import { RegisterComponent } from './module/register/register.component';
 import { ThankComponent } from './module/thank/thank.component';
 import { SearchotelComponent } from './module/components/searchotel/searchotel.component';
+import { HotelComponent } from './module/hotel/hotel.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SearchotelComponent } from './module/components/searchotel/searchotel.c
     TicketsComponent,
     RegisterComponent,
     ThankComponent,
-    SearchotelComponent
+    SearchotelComponent,
+    HotelComponent
   ],
   imports: [
     NgbModule,

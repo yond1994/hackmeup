@@ -25,7 +25,7 @@ export class SearchotelComponent implements OnInit {
     endDate: {year: 2019, month: 5, day: 19}
   };
   // decalarando ciudades
-  cities: any;
+  hotel: any;
   adults: any = 1;
   constructor(private fb: FormBuilder, private rest: RestService, private config: NgSelectConfig, private router: Router) {
     this.config.notFoundText = 'Custom not found';
@@ -38,9 +38,9 @@ export class SearchotelComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.rest.get('/1.0/train/zones?limit=30')
+    this.rest.get('/1.0/hotel/zones?limit=30')
       .then((response: any) => {
-        this.cities = response.data.data;
+        this.hotel = response.data.data;
         console.log(response);
       }).catch(error => {
       console.error(error);
@@ -56,11 +56,10 @@ export class SearchotelComponent implements OnInit {
         date_from: datefront,
         date_to: dateto,
         origin_available_zone_id: this.form.value.origin_available_zone_id,
-        destination_available_zone_id: this.form.value.destination_available_zone_id,
         adults: this.form.value.adults
       }
       let datasend = JSON.stringify(body);
-      this.router.navigateByUrl('/tickets/' + datasend );
+      this.router.navigateByUrl('/hotel/' + datasend );
     }
   }
 }

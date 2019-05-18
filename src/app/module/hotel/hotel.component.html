@@ -1,3 +1,36 @@
-<p>
-  hotel works!
-</p>
+<div class="container margintop10">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="text-center">
+          <h5> Lista de hoteles</h5>
+        </div>
+
+        <div class="card" *ngFor="let cam of hotels;">
+          <div class="card-body cursor" (click)="ir(cam.id)">
+            <div class="row ">
+              <div class="col-sm-8">
+                <h5> {{cam.name}}</h5>
+                <p> {{cam.description}}</p>
+              </div>
+              <div class="col-sm-4">
+                <div class="float-right">
+                  <h1>{{cam.amount}} €</h1>
+                  <i style="color: #ffe600" class="fa fa-star"></i>
+                  <i style="color: #ffe600"  class="fa fa-star"></i>
+                  <i style="color: #ffe600" class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+        <hr>
+        <div class="text-center">
+          <hr>
+          <button (click)="ir()" [disabled]="!this.idto || !this.idfrom" type="submit" class="btn btn-warning form-control margintop30">Reserve</button>
+        </div>
+    </div>
+
+  </div>
+</div>

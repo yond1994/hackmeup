@@ -1,0 +1,9 @@
+.margintop10 {
+  margin-top: 80px;
+}
+.cursor {
+  cursor: pointer;
+}
+.cursor :hover {
+  background-color: #eeeeee;
+}

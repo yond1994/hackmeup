@@ -3,22 +3,20 @@
   <div class="row">
     <div class="col-md-3 col-xs-6">
       <label>From</label>
-      <ng-select class="custom" formControlName="origin_available_zone_id" [items]="cities" [virtualScroll]="true"  placeholder="City or Station"  bindLabel="train_stations_name" bindValue="id" >
+      <ng-select class="custom" formControlName="origin_available_zone_id" [items]="hotel" [virtualScroll]="true"  placeholder="City or Station"  bindLabel="contry_name" bindValue="id" >
         <ng-template ng-option-tmp let-item="item" let-index="index" let-search="searchTerm">
           <b [ngOptionHighlight]="search">
-            <div>{{item.id}} / {{item.train_stations_name}}</div>
-            <div class="font-weight-light">{{item.contry_name}}</div>
+            <div >{{item.contry_name}}</div>
           </b>
         </ng-template>
       </ng-select>
     </div>
     <div class="col-md-3 col-xs-6">
       <label>To</label>
-      <ng-select class="custom" formControlName="destination_available_zone_id" [items]="cities" [virtualScroll]="true"  placeholder="City or Station"  bindLabel="train_stations_name" bindValue="id" >
+      <ng-select class="custom" formControlName="destination_available_zone_id" [items]="hotel" [virtualScroll]="true"  placeholder="City or Station"  bindLabel="contry_name" bindValue="id" >
         <ng-template ng-option-tmp let-item="item" let-index="index" let-search="searchTerm">
           <b [ngOptionHighlight]="search">
-            <div>{{item.id}} {{item.train_stations_name}}</div>
-            <div class="font-weight-light">{{item.contry_name}}</div>
+            <div >{{item.contry_name}}</div>
           </b>
         </ng-template>
       </ng-select>
